@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Clock with Search</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>World Clock</h1>
+        <input id="Europe" type="radio" name="continent" value="Europe">Europe</input>
+        <input id="Asia" type="radio" name="continent" value="Asia">Asia</input>
+        <input id="Africa" type="radio" name="continent" value="Africa">Africa</input>
+        <input id="America" type="radio" name="continent" value="America">America</input>
+
+        <input type="text" id="timezoneInput" placeholder="Enter time zone (e.g:London)" />
+        <button onclick="searchTimeZone()">Get Time</button>
+        <div id="clockDisplay" class="clock">
+            <h2 id="cityName">Enter a City to get the current time</h2>
+            <p id="timeDisplay">00:00:00 AM</p>
+        </div>
+    </div>
+</body>
+</html>
